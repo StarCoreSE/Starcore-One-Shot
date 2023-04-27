@@ -125,7 +125,7 @@ namespace Scripts {
                     MagsToLoad = 1, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 110000, // Heat generated per shot.
-                    MaxHeat = 432000, // Max heat before weapon enters cooldown (70% of max heat).
+                    MaxHeat = 216000, // Max heat before weapon enters cooldown (70% of max heat).
                     Cooldown = 0f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
                     HeatSinkRate = 0, // Amount of heat lost per second.
                     DegradeRof = false, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
@@ -138,7 +138,7 @@ namespace Scripts {
                     SpinFree = true, // Spin barrel while not firing.
                     StayCharged = false, // Will start recharging whenever power cap is not full.
                     MaxActiveProjectiles = 2, // Maximum number of projectiles in flight
-                    MaxReloads = 2, // Maximum number of reloads in the LIFETIME of a weapon
+                    MaxReloads = 1, // Maximum number of reloads in the LIFETIME of a weapon
                 },
                 Audio = new HardPointAudioDef
                 {

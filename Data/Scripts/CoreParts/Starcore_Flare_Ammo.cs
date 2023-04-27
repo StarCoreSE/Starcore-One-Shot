@@ -41,7 +41,7 @@ namespace Scripts
     {
         private AmmoDef Starcore_Flare_Launch => new AmmoDef // Your ID, for slotting into the Weapon CS
         {
-            AmmoMagazine = "SRMAMMO", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "Flare", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
@@ -51,7 +51,7 @@ namespace Scripts
             BackKickForce = 100f, // Recoil. This is applied to the Parent Grid.
             DecayPerShot = 0f, // Damage to the firing weapon itself.
             HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
-            EnergyMagazineSize = 0, // For energy weapons, how many shots to fire before reloading.
+            EnergyMagazineSize = 8, // For energy weapons, how many shots to fire before reloading.
             IgnoreWater = false, // Whether the projectile should be able to penetrate water when using WaterMod.
             IgnoreVoxels = false, // Whether the projectile should be able to penetrate voxels.
 
